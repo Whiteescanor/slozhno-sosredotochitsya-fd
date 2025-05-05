@@ -27,7 +27,7 @@
 }
 @media (width>=768px) {
   :root {
-    .title {
+    .header-title {
       --title-size: clamp(7.25rem, 0.5625rem + 14.4531vw, 9.8125rem);
     }
   }
