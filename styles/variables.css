@@ -7,21 +7,28 @@
   и их переопределение под различные устройства
 */
 :root {
-  --basic-pink: #ff8dcb;
-  --title-pink: #ffc2e6;
-  --almost-white-bg: #fff1f7;
-  --real-red: #ff0070;
-  --approximately-black: #000028;
-  --almost-black: #353430;
-
-  --regular-font-size: 18px;
-  --regular-line-height: 100%;
-  --regular-gap: 10px;
-  --decoration-gap: clamp(10px, 2.65vw, 20px);
-  --min-height: 668px;
-  --header-margin-left: min(10px, 20px - 2.6vw);
-  --section-child-margin: 40px;
-  --project-font-family: "IBM Plex Mono", "Arial", sans-serif;
-  --corner-thickness: 1px;
-  --rec_empty_x_pos: 30px;
+  --main-font-family: "IBM Plex mono", monospace;
+  --accent-color: #ff0070;
+  --main-bg-color: #000028;
+  --background-image: url(../images/cover-image-dark.png);
+  --text-color: #f1b2ce;
+  --nav-color: #ff0070;
+  --nav-hover-color: rgb(255 0 112 / 0.4);
+  --main-heading-color: #000028;
+  --header-title: #db00ff;
+  --main-gap: 10px;
+  --gap: 20px;
+  --main-text-size: 18px;
+  --main-line-height: 23.4px;
+  --font-weight-title: 700;
+  --font-weight: 400;
+  --title-line-height: 83%;
+  --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+}
+@media (width>=768px) {
+  :root {
+    .title {
+      --title-size: clamp(7.25rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    }
+  }
 }
